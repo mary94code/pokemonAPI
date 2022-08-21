@@ -1,0 +1,77 @@
+.compareContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    input{
+        padding: 10px 40px;
+        border-radius: 35px;
+        border: none;
+        outline: none;
+        margin: 5px;
+    }
+    .compareBtn{
+        padding: 10px 20px;
+        border-radius: 35px;
+        outline: none;
+        border: none;
+        background-color: #FE504F;
+        color: white;
+        text-transform: uppercase;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+.compareResults {
+    margin: 30px 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    background-color: #fff;
+    thead {
+        background-color: #FE504F;
+        color: white;
+        th {
+            padding: 10px;
+        }
+    }
+    tr{
+        td{
+            padding: 20px;
+            border: 1px solid #ddd;
+        text-transform: capitalize;
+
+        }
+         
+    }
+}
+@media (max-width: 500px) {
+    .compareResults{
+        max-width: 90%;
+        overflow-x: auto;
+    }
+    table{
+        tr {
+            td{
+                padding: 20px 10px;
+                font-size: 15px;
+            }
+        }
+    }
+    
+}
+.like_heart{
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

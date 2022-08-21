@@ -13,6 +13,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+### `challenges`
+
+My only challenge was the lack of time due to main job 
+
+### `extra feature`
+
+If i had more time i would add a filter option 
 
 ### `npm test`
 

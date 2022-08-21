@@ -1,0 +1,41 @@
+.favouritePokemonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  h2{
+    margin-top: 30px;
+  }
+    .favouritePokemon {
+        margin: 30px;
+        text-align: center;
+        background-color: #FFFAF6;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 3, 10);
+            transform: translateY(-5px);
+        }
+
+    }
+}
+.individualImg {
+    width: 150px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+.deleteBtn{
+    float: right;
+    cursor: pointer;
+    width: 20px;
+}
+.noFavourites{
+    text-align: center;
+    margin-top: 50px;
+    img{
+        margin-top: 10px;
+    }
+}

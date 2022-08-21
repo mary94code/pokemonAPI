@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(#FFFAF6, #FE504F);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Viga", sans-serif;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 2px solid #FE504F;
+  text-transform: capitalize;
+  color: #462d16;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main_img {
+  width: 100px;
+  height: 100px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.search_input {
+  padding: 7px 10px 7px 35px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: #FE504F;
+  color: white;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.search_input::-moz-placeholder {
+  color: white;
+}
+.search_input:-ms-input-placeholder {
+  color: white;
+}
+.search_input::placeholder {
+  color: white;
+}
+
+.searchBtn {
+  background-color: #FE504F;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 35px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.searchBtn:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    flex-direction: column;
+  }
+  .searchContainer .searchBtn {
+    margin-top: 10px;
+  }
+}
+.logo_img {
+  width: 50px;
+}
+
+header {
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  ul {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+.individual_cards_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card_container {
+  margin: 30px;
+  text-align: center;
+  background-color: #FFFAF6;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.card_container:hover {
+  box-shadow: 0px 0px 10px rgb(0, 0, 3);
+  transform: translateY(-5px);
+}
+
+.about_link {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.about_link::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #FE504F;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.pokemonPic {
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  width: 130px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  height: calc(100% - 40px);
+}
+
+.active_tab {
+  border-bottom: 2px solid #FE504F;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.detailedContainer {
+  position: relative;
+  display: flex;
+  background-color: #FFFAF6;
+  padding: 10px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 35px;
+}
+.detailedContainer .small_info {
+  margin: 0 auto;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detailedContainer .abilitiesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.detailedContainer .abilitiesContainer .abilitiesContainer_small {
+  display: flex;
+}
+.detailedContainer .abilitiesContainer .abilitiesContainer_small p {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 2px solid #FE504F;
+  text-transform: capitalize;
+  color: #462d16;
+}
+
+.aboutContainer {
+  display: flex;
+  background-image: linear-gradient(to right, #FFFAF6, #7c7671);
+  border-radius: 35px;
+  width: 45%;
+  padding: 15px;
+}
+
+.info div {
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .card_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card_container .about_link {
+    margin-top: 10px;
+  }
+  .detailedContainer {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .aboutContainer {
+    width: 100%;
+    height: 270px;
+  }
+  .tabs h2 {
+    font-size: 18px;
+  }
+  .info p {
+    font-size: 14px;
+  }
+}
+.compareContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.compareContainer input {
+  padding: 10px 40px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+.compareContainer .compareBtn {
+  padding: 10px 20px;
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  background-color: #FE504F;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.compareContainer .compareBtn:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.compareResults {
+  margin: 30px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  background-color: #fff;
+}
+table thead {
+  background-color: #FE504F;
+  color: white;
+}
+table thead th {
+  padding: 10px;
+}
+table tr td {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+}
+
+@media (max-width: 500px) {
+  .compareResults {
+    max-width: 90%;
+    overflow-x: auto;
+  }
+  table tr td {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+}
+.like_heart {
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.favouritePokemonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.favouritePokemonsContainer h2 {
+  margin-top: 30px;
+}
+.favouritePokemonsContainer .favouritePokemon {
+  margin: 30px;
+  text-align: center;
+  background-color: #FFFAF6;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.favouritePokemonsContainer .favouritePokemon:hover {
+  box-shadow: 0px 0px 10px rgb(0, 0, 3);
+  transform: translateY(-5px);
+}
+
+.individualImg {
+  width: 150px;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+}
+
+.deleteBtn {
+  float: right;
+  cursor: pointer;
+  width: 20px;
+}
+
+.noFavourites {
+  text-align: center;
+  margin-top: 50px;
+}
+.noFavourites img {
+  margin-top: 10px;
+}/*# sourceMappingURL=styles.css.map */
